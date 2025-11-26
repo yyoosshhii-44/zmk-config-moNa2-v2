@@ -16,7 +16,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        mouse_drug {
+            bindings = <&msc MOVE_Y(10)>;
+            key-positions = <30 31>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
