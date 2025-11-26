@@ -22,6 +22,7 @@
         mouse_drug {
             bindings = <&mo 6>;
             key-positions = <30 31>;
+            layers = <0>;
         };
     };
 
