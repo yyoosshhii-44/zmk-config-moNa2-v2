@@ -20,7 +20,7 @@
         compatible = "zmk,combos";
 
         mouse_drug {
-            bindings = <&msc MOVE_Y(10)>;
+            bindings = <&msc MOVE_Y(0)>;
             key-positions = <30 31>;
         };
     };
@@ -71,10 +71,10 @@
 
         layer_1 {
             bindings = <
-&kp ESC         &kp LS(N1)  &kp LS(N2)         &kp LS(N3)  &kp LS(N5)                          &kp F1             &kp F2      &kp F3    &kp F4     &kp F5
-&kp TAB         &kp LS(N7)  &none              &kp LS(N9)  &kp LEFT_BRACKET            &trans  &kp RIGHT_BRACKET  &kp LS(N0)  &kp BSLH  &kp MINUS  &kp EQUAL
-&kp LEFT_SHIFT  &none       &kp DOUBLE_QUOTES  &kp SEMI    &kp COMMA         &trans    &trans  &kp PERIOD         &kp COLON   &trans    &trans     &kp F11
-&kp LG(N3)      &kp LG(N4)  &kp LG(N5)         &trans      &trans            &trans    &to 2   &trans                                              &trans
+&kp ESC         &kp LS(N1)  &kp LS(N2)         &kp LS(N3)  &kp LS(N5)                                 &kp F1             &kp F2      &kp F3    &kp F4     &kp F5
+&kp TAB         &kp LS(N7)  &none              &kp LS(N9)  &kp LEFT_BRACKET               &trans      &kp RIGHT_BRACKET  &kp LS(N0)  &kp BSLH  &kp MINUS  &kp EQUAL
+&kp LEFT_SHIFT  &none       &kp DOUBLE_QUOTES  &kp APOS    &kp SEMI          &kp COMMA    &kp PERIOD  &kp COLON          &trans      &trans    &trans     &kp F11
+&kp LG(N3)      &kp LG(N4)  &kp LG(N5)         &trans      &trans            &trans       &to 2       &trans                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -93,13 +93,13 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                            &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END               &trans      &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &kp COMMA    &kp PERIOD  &trans  &trans  &trans  &trans  &trans
+&kp LC(LEFT)    &trans                  &trans          &trans                   &trans   &trans       &trans      &trans                          &kp RC(RIGHT)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_4 {
