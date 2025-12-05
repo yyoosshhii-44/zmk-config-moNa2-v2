@@ -65,17 +65,15 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 LANG2  &mt LEFT_SHIFT SPACE  &lt 3 LANG1    &lt 2 ENTER  &mt RIGHT_CONTROL BACKSPACE                               &kp DEL
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
             bindings = <
-&kp ESC         &kp LS(N1)  &kp LS(N2)         &kp LS(N3)  &kp LS(N5)                                 &kp F1             &kp F2      &kp F3    &kp F4     &kp F5
-&kp TAB         &kp LS(N7)  &none              &kp LS(N9)  &kp LEFT_BRACKET               &trans      &kp RIGHT_BRACKET  &kp LS(N0)  &kp BSLH  &kp MINUS  &kp EQUAL
-&kp LEFT_SHIFT  &none       &kp DOUBLE_QUOTES  &kp APOS    &kp SEMI          &kp COMMA    &kp PERIOD  &kp COLON          &trans      &trans    &trans     &kp F11
-&kp LG(N3)      &kp LG(N4)  &kp LG(N5)         &trans      &trans            &trans       &to 2       &trans                                              &trans
+&kp ESC         &kp LS(N1)      &kp LS(N2)         &kp LS(N3)  &kp LS(N5)                                 &kp F1             &kp F2      &kp F3    &kp F4     &kp F5
+&kp TAB         &kp LS(N7)      &none              &kp LS(N9)  &kp LEFT_BRACKET               &trans      &kp RIGHT_BRACKET  &kp LS(N0)  &kp BSLH  &kp MINUS  &kp EQUAL
+&kp LEFT_SHIFT  &none           &kp DOUBLE_QUOTES  &kp APOS    &kp SEMI          &kp COMMA    &kp PERIOD  &kp COLON          &trans      &trans    &trans     &kp F11
+&kp LG(LS(N3))  &kp LG(LS(N4))  &kp LG(LS(N5))     &trans      &trans            &trans       &to 2       &trans                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -83,10 +81,10 @@
 
         layer_2 {
             bindings = <
-&kp MINUS                   &kp N7        &kp N8        &kp NUMBER_9   &kp PLUS                                           &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp ASTERISK                       &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp PERIOD            &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&kp LS(N5)                  &kp EQUAL     &kp N0        &kp BACKSPACE  &mt LEFT_SHIFT ENTER  &to 0        &trans          &trans                                                                     &kp PIPE
+&kp MINUS   &kp N7        &kp N8        &kp NUMBER_9   &kp PLUS                                           &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &kp ASTERISK                       &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&kp COMMA   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp PERIOD            &kp EQUAL    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&kp LS(N5)  &kp EQUAL     &kp N0        &kp BACKSPACE  &mt LEFT_SHIFT ENTER  &to 0        &trans          &trans                                                                     &kp PIPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -100,7 +98,7 @@
 &kp LC(LEFT)    &trans                  &trans          &trans                   &to 2    &trans      &trans     &trans                          &kp RC(RIGHT)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>;
         };
 
         layer_4 {
