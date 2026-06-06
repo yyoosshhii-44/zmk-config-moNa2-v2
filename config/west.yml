@@ -4,30 +4,36 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sayu-hub
       url-base: https://github.com/sayu-hub
-    - name: badjeff    # <-- PMW3610
-      url-base: https://github.com/badjeff
-    # - name: sekigon-gonnoc  # <-- PAW3222
-    #   url-base: https://github.com/sekigon-gonnoc
+    #- name: badjeff    # <-- PMW3610
+    #  url-base: https://github.com/badjeff
+    - name: sekigon-gonnoc  # <-- PAW3222
+      url-base: https://github.com/sekigon-gonnoc
     - name: caksoylar  # <-- RGB LED
       url-base: https://github.com/caksoylar
     - name: zettaface  # <-- Input Processor Keybind
       url-base: https://github.com/zettaface
+    - name: prospector
+      url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3-branch
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: zmk-0.3
-    # - name: zmk-driver-paw3222
-    #   remote: sekigon-gonnoc
-    #   revision: main
+    #- name: zmk-pmw3610-driver
+    #  remote: badjeff
+    #  revision: zmk-0.3
+    - name: zmk-driver-paw3222
+      remote: sekigon-gonnoc
+      revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
     - name: zmk-input-processor-keybind
       remote: zettaface
       revision: main
+    - name: prospector-zmk-module
+      remote: prospector
+      revision: v2.2.1
+      path: modules/prospector-zmk-module
   self:
     path: config
